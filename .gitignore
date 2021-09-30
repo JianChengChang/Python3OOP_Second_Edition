@@ -138,9 +138,9 @@ dmypy.json
 cython_debug/
 
 #other file
-/123.txt
-/456.txt
-/WIN_20210611_15_28_49_Pro.jpg
-/aloha.zip
-/hello.zip
-/unzipped-aloha/WIN_20210611_15_28_49_Pro.jpg
+./123.txt
+./456.txt
+./WIN_20210611_15_28_49_Pro.jpg
+./aloha.zip
+./hello.zip
+./unzipped-aloha/WIN_20210611_15_28_49_Pro.jpg
