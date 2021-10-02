@@ -6,13 +6,14 @@
 
 class Character:
     def __init__(self, character, bold=False, italic=False, underline=False) -> None:
-        assert len(character) == 1
-        self.character = character
+        assert len(str(character)) == 1
+        self.character = str(character)
         self.bold = bold
         self.italic = italic
         self.underline = underline
     
     def __str__(self) -> str:
+        '''__str__是python類別預設方法之一，可以以文字的方式傳回物件裡的屬性內容'''
         bold = "*" if self.bold else ''
         italic = '/' if self.italic else ''
         underline = '_' if self.underline else ''
@@ -74,4 +75,4 @@ class Document:
     # 目前 self.characters 裡放的都是 Character 物件，利用 str() 就可直接回傳 Character 裡的文字屬性
     @property
     def show_string(self):
-        return ''.join((str(c)for c in self.characters))
+        return ''.join(str(c) for c in self.characters)
